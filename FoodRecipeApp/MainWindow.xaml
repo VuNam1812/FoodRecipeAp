@@ -1,0 +1,340 @@
+﻿<Window x:Class="FoodRecipeApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FoodRecipeApp"
+        xmlns:model="clr-namespace:FoodRecipeApp.Model"
+        mc:Ignorable="d"
+        
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+        TextElement.FontWeight="Regular"
+        TextElement.FontSize="13"
+        TextOptions.TextFormattingMode="Ideal"
+        TextOptions.TextRenderingMode="Auto"
+        FontFamily="{DynamicResource MaterialDesignFont}"
+        
+        WindowStyle="None"
+        AllowsTransparency="True"
+        WindowStartupLocation="CenterScreen"
+        Background="Transparent"
+        x:Name="MainWD"
+       MouseDown="MainWD_MouseDown"
+        
+        Title="MainWindow" Height="700" Width="1100">
+    <Window.Resources>
+        <model:ItemRowSizeConverter x:Key="RowSizeConverter"></model:ItemRowSizeConverter>
+        <model:ItemColSizeConverter x:Key="ColSizeConverter"></model:ItemColSizeConverter>
+
+        <Storyboard x:Key="Expand">
+            <ThicknessAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Margin)" Storyboard.TargetName="mainApp">
+                <EasingThicknessKeyFrame KeyTime="0" Value="60,0,0,0"/>
+                <EasingThicknessKeyFrame KeyTime="0:0:0.3" Value="165,0,0,0"/>
+            </ThicknessAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Key="CollapMenu">
+            <ThicknessAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Margin)" Storyboard.TargetName="mainApp">
+                <EasingThicknessKeyFrame KeyTime="0" Value="165,0,0,0"/>
+                <EasingThicknessKeyFrame KeyTime="0:0:0.3" Value="60,0,0,0"/>
+            </ThicknessAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Key="MenuBtn_Click">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(Border.BorderBrush).(Brush.Opacity)" Storyboard.TargetName="button2">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.4" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(Panel.Background).(Brush.Opacity)" Storyboard.TargetName="button2">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.4" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Width)" Storyboard.TargetName="polygon1">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="30"/>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Key="Search_GotFocus">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Width)" Storyboard.TargetName="packIcon">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="0"/>
+            </DoubleAnimationUsingKeyFrames>
+            <ThicknessAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Margin)" Storyboard.TargetName="SearchText">
+                <EasingThicknessKeyFrame KeyTime="0:0:0.2" Value="25,8"/>
+            </ThicknessAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Key="Search_LostFocus">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Width)" Storyboard.TargetName="packIcon">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="35"/>
+            </DoubleAnimationUsingKeyFrames>
+            <ThicknessAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Margin)" Storyboard.TargetName="SearchText">
+                <EasingThicknessKeyFrame KeyTime="0" Value="25,8"/>
+                <EasingThicknessKeyFrame KeyTime="0:0:0.2" Value="44,8,25,8"/>
+            </ThicknessAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Key="Show_PreButton">
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="moreFirstText">
+                <DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Collapsed}"/>
+                <DiscreteObjectKeyFrame KeyTime="0:0:0.1" Value="{x:Static Visibility.Visible}"/>
+            </ObjectAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="PreButton">
+                <DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Collapsed}"/>
+                <DiscreteObjectKeyFrame KeyTime="0:0:0.1" Value="{x:Static Visibility.Visible}"/>
+            </ObjectAnimationUsingKeyFrames>
+
+        </Storyboard>
+        <Storyboard x:Key="Hidden_PreButton">
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="moreFirstText">
+                <DiscreteObjectKeyFrame KeyTime="0:0:0.1" Value="{x:Static Visibility.Collapsed}"/>
+            </ObjectAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="PreButton">
+                <DiscreteObjectKeyFrame KeyTime="0:0:0.1" Value="{x:Static Visibility.Collapsed}"/>
+            </ObjectAnimationUsingKeyFrames>
+
+        </Storyboard>
+        <Storyboard x:Key="Show_NextButton">
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="moreLastText">
+                <DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Collapsed}"/>
+                <DiscreteObjectKeyFrame KeyTime="0:0:0.1" Value="{x:Static Visibility.Visible}"/>
+            </ObjectAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="NextButton">
+                <DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Collapsed}"/>
+                <DiscreteObjectKeyFrame KeyTime="0:0:0.1" Value="{x:Static Visibility.Visible}"/>
+            </ObjectAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Key="Hidden_NextButton">
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="moreLastText">
+                <DiscreteObjectKeyFrame KeyTime="0:0:0.1" Value="{x:Static Visibility.Collapsed}"/>
+            </ObjectAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="NextButton">
+                <DiscreteObjectKeyFrame KeyTime="0:0:0.1" Value="{x:Static Visibility.Collapsed}"/>
+            </ObjectAnimationUsingKeyFrames>
+        </Storyboard>
+    </Window.Resources>
+    <Window.Triggers>
+        <EventTrigger RoutedEvent="UIElement.GotFocus" SourceName="SearchText">
+            <BeginStoryboard x:Name="Search_GotFocus_BeginStoryboard" Storyboard="{StaticResource Search_GotFocus}"/>
+        </EventTrigger>
+        <EventTrigger RoutedEvent="UIElement.LostFocus" SourceName="SearchText">
+            <BeginStoryboard x:Name="Search_LostFocus_BeginStoryboard" Storyboard="{StaticResource Search_LostFocus}"/>
+        </EventTrigger>
+    </Window.Triggers>
+    <Grid>
+
+        <Grid x:Name="mainApp">
+            <Rectangle RadiusX="5" RadiusY="5" Fill="White" Stroke="Black" StrokeThickness="1" />
+
+            <!--#region List Recipe-->
+            <ListView Visibility="Visible" x:Name="lstRecipe" Margin="20 75 20 75" ScrollViewer.HorizontalScrollBarVisibility="Hidden" ScrollViewer.VerticalScrollBarVisibility="Hidden">
+
+                <ListView.ItemsPanel>
+                    <ItemsPanelTemplate>
+                        <WrapPanel x:Name="panellst" MaxWidth="{Binding RelativeSource={RelativeSource AncestorType=ListView, Mode=FindAncestor}, Path=ActualWidth}"
+                                  ItemWidth="{Binding RelativeSource={RelativeSource AncestorType=ListView, Mode=FindAncestor}, Path=ActualWidth, Converter={StaticResource RowSizeConverter}}"
+                                  ItemHeight="{Binding RelativeSource={RelativeSource AncestorType=ListView, Mode=FindAncestor}, Path=ActualHeight, Converter={StaticResource ColSizeConverter}}"
+                                  ScrollViewer.VerticalScrollBarVisibility="Hidden">
+                        </WrapPanel>
+
+                    </ItemsPanelTemplate>
+                </ListView.ItemsPanel>
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <Grid x:Name="BlockRecipe" MouseLeave="BlockRecipe_MouseLeave" MouseEnter="BlockRecipe_MouseEnter" MinWidth="140" MinHeight="180" HorizontalAlignment="Center" VerticalAlignment="Center"
+                  Width="{Binding RelativeSource={RelativeSource AncestorType=ListViewItem, Mode=FindAncestor}, Path=ActualWidth}"
+                  Height="{Binding RelativeSource={RelativeSource AncestorType=ListViewItem, Mode=FindAncestor}, Path=ActualHeight}" Background="{x:Null}" >
+                            <StackPanel Orientation="Vertical" VerticalAlignment="Top">
+                                <Grid Margin="5" >
+                                    <Grid DataContext="{Binding Images}">
+                                        <Image Stretch="Fill" Loaded="Image_Loaded"/>
+                                    </Grid>
+
+
+                                    <Grid x:Name="OrtherButtons" Visibility="Hidden">
+                                        <Button HorizontalAlignment="Right" DataContext="{Binding IsFavorite}" Loaded="FavoriteButton_Loaded" Click="FavoriteButton_Click" VerticalAlignment="Top" Background="{x:Null}" BorderBrush="{x:Null}" Padding="0" Width="32">
+                                            <materialDesign:PackIcon Kind="Heart" Width="22" Height="22" Foreground="#DDFFFFFF" BorderThickness="0"/>
+                                        </Button>
+                                        <Button  Background="#FF0A4E21" BorderBrush="#FF2C2929" Content="Detail" Height="25" Click="DetailButton_Click" VerticalAlignment="Bottom"/>
+                                    </Grid>
+                                </Grid>
+                                <StackPanel VerticalAlignment="Top">
+                                    <TextBlock Text="{Binding Name}" Opacity=".7" Padding="5,0" FontWeight="Bold" FontFamily="Roboto" FontSize="14" TextWrapping="Wrap" MaxWidth="{Binding ElementName=BlockRecipe, Path=ActualWidth}" HorizontalAlignment="Center" VerticalAlignment="Center" TextAlignment="Center"/>
+                                    <materialDesign:RatingBar  Value="{Binding rate}"  IsReadOnly="True" x:Name="ReadOnlyRatingBar" VerticalAlignment="Bottom" Margin="7,0,0,5" Height="25" Width="119" Foreground="Red" />
+                                </StackPanel>
+
+                            </StackPanel>
+
+                        </Grid>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+            <!--#endregion-->
+
+            <!--#region Search-->
+            <Grid>
+                <Border BorderBrush="Black" BorderThickness="1" Margin="280,64,280,0" 
+                        Visibility="{Binding ElementName=SearchResult, Path=Visibility}"
+                        Height="{Binding ElementName=SearchResult, Path=ActualHeight}" Background="#FFF1EEEE" VerticalAlignment="Top"/>
+                <Grid x:Name="Search" Margin="250,16,250,634">
+                    <Border CornerRadius="25" BorderThickness="2" BorderBrush="Black"/>
+                    <materialDesign:PackIcon x:Name="packIcon" Kind="Magnify" VerticalAlignment="Center" Margin="10,0,0,0" Width="35" Height="35" />
+                    <TextBox x:Name="SearchText" VerticalAlignment="Center" 
+                         Height="34" Margin="44,8,25,8"
+                        TextChanged="SearchText_TextChanged"
+                             LostFocus="SearchText_LostFocus"
+                         materialDesign:HintAssist.Hint="Tìm kiếm" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" FontSize="20" Padding="0,1,0,0" BorderBrush="{x:Null}" CaretBrush="{x:Null}"
+                         />
+                </Grid>
+
+                <ListView Visibility="Hidden" x:Name="SearchResult" 
+                          
+                          Margin="280,64,280,0" VerticalAlignment="Top" MaxHeight="560"
+                          ScrollViewer.HorizontalScrollBarVisibility="Disabled" ScrollViewer.VerticalScrollBarVisibility="Hidden" 
+                          >
+                    <ListView.ItemsPanel>
+                        <ItemsPanelTemplate>
+                            <WrapPanel Orientation="Vertical" VerticalAlignment="Top" ItemHeight="95" ItemWidth="540"
+                                       
+                                       MaxWidth="540"/>
+                        </ItemsPanelTemplate>
+                    </ListView.ItemsPanel>
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <StackPanel DataContext="{Binding}" Orientation="Horizontal" Width="540" Height="75" MouseDown="SearchResult_Selected">
+                                <Grid Margin="3,3,0,3" DataContext="{Binding Images}" Width="150">
+                                    <Image Stretch="Fill" x:Name="ImageRecipeSearch" Loaded="ImageRecipeSearch_Loaded"/>
+                                </Grid>
+                                <TextBlock TextAlignment="Justify" Margin="10,5,0,5" FontWeight="Bold" FontSize="22" TextWrapping="Wrap" MaxWidth="412" Padding="0" HorizontalAlignment="Center" VerticalAlignment="Center" Width="410" 
+                                           Text="{Binding Name}" Opacity="0.7"/>
+                            </StackPanel>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+            </Grid>
+            <!--#endregion-->
+
+            <!--#region Page number-->
+            <StackPanel x:Name="PageNumber" Margin="0,649,20,19" Orientation="Horizontal" HorizontalAlignment="Center">
+                <Button x:Name="PreButton" Click="PreButton_Click" materialDesign:ButtonAssist.CornerRadius="15 3 3 15" Content="Trang trước" VerticalAlignment="Center" Foreground="#DD000000" BorderBrush="#FF39373C" Background="{x:Null}" HorizontalAlignment="Left" Width="105" Visibility="Collapsed"/>
+                <StackPanel Orientation="Horizontal" Margin="10,0">
+                    <TextBlock x:Name="moreFirstText" Text="..." Padding="0,11,0,0" FontSize="22" TextAlignment="Center" FontWeight="Bold" HorizontalAlignment="Left" Width="20" Margin="0,0,10,0" Visibility="Collapsed"/>
+                    <Button x:Name="FirstPageButton" Click="PageButton_Click" Content="1" materialDesign:ButtonAssist.CornerRadius="15" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="0,0,3,0" Background="#FF004C1A" Foreground="#DDFFFFFF" BorderBrush="#FF36343A" Padding="12,4" HorizontalContentAlignment="Center" FontWeight="Bold"/>
+                    <Button x:Name="SecondPageButton" Click="PageButton_Click" Content="2" materialDesign:ButtonAssist.CornerRadius="15" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="0" Background="Transparent" Foreground="#DD000000" BorderBrush="#FF35343A" Padding="12,4" HorizontalContentAlignment="Center" FontWeight="Bold"/>
+                    <Button x:Name="LastPageButton" Click="PageButton_Click" Content="3" materialDesign:ButtonAssist.CornerRadius="15" VerticalAlignment="Center" HorizontalAlignment="Center" Background="{x:Null}" Foreground="#DD000000" BorderBrush="#FF36343A" Padding="12,4" HorizontalContentAlignment="Center" FontWeight="Bold" Margin="3,0,0,0"/>
+                    <TextBlock x:Name="moreLastText" Text="..." Padding="0,11,0,0" FontSize="22" TextAlignment="Center" FontWeight="Bold" HorizontalAlignment="Right" Width="20" Margin="10,0,0,0"/>
+                </StackPanel>
+                <Button x:Name="NextButton" materialDesign:ButtonAssist.CornerRadius="3 15 15 3" Content="Trang sau" VerticalAlignment="Center" Foreground="#DD000000" BorderBrush="#FF39373C" Background="{x:Null}" HorizontalAlignment="Right" Width="105" Click="NextButton_Click"/>
+            </StackPanel>
+
+            <!--#endregion-->
+            
+            <!-- #region BlockAbout -->
+            <Grid Visibility="Hidden" Background="White" x:Name="BlockAbout">
+                <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" TextAlignment="Center" FontWeight="Bold" FontSize="24"
+                           >
+                    1612407
+                    <LineBreak />
+                    Vũ Thành Nam
+                     <LineBreak />
+                    Khoa CNTT - ĐH Khoa Học Tự Nhiên
+                </TextBlock> 
+            </Grid>
+            <!-- #endregion -->
+            
+            <!--#region Menu Button-->
+            <materialDesign:DrawerHost LeftDrawerBackground="{x:Null}">
+                <materialDesign:DrawerHost.Style>
+                    <Style TargetType="materialDesign:DrawerHost" BasedOn="{StaticResource {x:Type materialDesign:DrawerHost}}">
+                        <Style.Triggers>
+                            <DataTrigger Binding="{Binding IsChecked, ElementName=BackgroundToggle}" Value="True">
+                                <Setter Property="OverlayBackground" Value="{DynamicResource PrimaryHueMidBrush}" />
+                            </DataTrigger>
+                        </Style.Triggers>
+                    </Style>
+                </materialDesign:DrawerHost.Style>
+                <materialDesign:DrawerHost.LeftDrawerContent>
+                    <Grid x:Name="menuApp" Height="700" Width="178" HorizontalAlignment="Left" VerticalAlignment="Center">
+                        <Rectangle Fill="#FF004C1A" RadiusX="5" RadiusY="5" StrokeThickness="2" Stroke="White" />
+
+                        <!--#region Menu Button-->
+                        <StackPanel HorizontalAlignment="Left" Width="170" VerticalAlignment="Center" Margin="4,200,0,200">
+                            <Button x:Name="AddRecipeButton" Height="50" BorderBrush="{x:Null}" Foreground="White"        
+                                    Click="AddRecipeButton_Click"
+                                    
+                                    Command="{x:Static materialDesign:DrawerHost.CloseDrawerCommand}"
+                                    CommandParameter="{x:Static Dock.Left}">
+                                <Button.Background>
+                                    <SolidColorBrush Color="#FF0C341A" Opacity="0"/>
+                                </Button.Background>
+                                <DockPanel HorizontalAlignment="Center" VerticalAlignment="Center" Width="140">
+                                    <materialDesign:PackIcon Kind="add" Height="40" Width="52"/>
+                                    <TextBlock Text="New recipe" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="5,0,0,0"></TextBlock>
+
+                                </DockPanel>
+                            </Button>
+                            <Button x:Name="DashboardButton" Height="50" BorderBrush="{x:Null}" Foreground="White" Click="Menubutton_Click"
+                                    Command="{x:Static materialDesign:DrawerHost.CloseDrawerCommand}"
+                                    CommandParameter="{x:Static Dock.Left}">
+                                <Button.Background>
+                                    <SolidColorBrush Color="#FF0C341A"/>
+                                </Button.Background>
+                                <DockPanel HorizontalAlignment="Center" VerticalAlignment="Center" Width="140">
+                                    <materialDesign:PackIcon DockPanel.Dock="Left"  Kind="HomeCircleOutline" Height="40" Width="52"/>
+                                    <TextBlock Text="Dashboard" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="5,0,0,0"></TextBlock>
+
+                                </DockPanel>
+                            </Button>
+                            <Button x:Name="FavoriteListButton" Height="50" BorderBrush="{x:Null}" Foreground="White" Click="Menubutton_Click"
+                                    Command="{x:Static materialDesign:DrawerHost.CloseDrawerCommand}"
+                                    CommandParameter="{x:Static Dock.Left}"
+                                    >
+                                <Button.Background>
+                                    <SolidColorBrush Color="#FF0C341A" Opacity="0"/>
+                                </Button.Background>
+                                <DockPanel HorizontalAlignment="Center" VerticalAlignment="Center" Width="140">
+                                    <materialDesign:PackIcon Kind="TableHeart" Height="40" Width="52"/>
+                                    <TextBlock  Text="Favorite" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="5,0,0,0"></TextBlock>
+
+                                </DockPanel>
+                            </Button>
+                            <Button x:Name="AboutButton" Height="50" BorderBrush="{x:Null}" Foreground="White" Click="Menubutton_Click"
+                                    Command="{x:Static materialDesign:DrawerHost.CloseDrawerCommand}"
+                                    CommandParameter="{x:Static Dock.Left}"
+                                    >
+                                <Button.Background>
+                                    <SolidColorBrush Color="#FF0C341A" Opacity="0"/>
+                                </Button.Background>
+                                <DockPanel HorizontalAlignment="Center" VerticalAlignment="Center" Width="140">
+                                    <materialDesign:PackIcon Kind="InformationVariant" Height="40" Width="52"/>
+                                    <TextBlock Text="About" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="5,0,0,0"></TextBlock>
+
+                                </DockPanel>
+                            </Button>
+                        </StackPanel>
+                        <!--#endregion-->
+                    </Grid>
+                </materialDesign:DrawerHost.LeftDrawerContent>
+                <Grid>
+                    <Button
+                    Command="{x:Static materialDesign:DrawerHost.OpenDrawerCommand}"
+                    CommandParameter="{x:Static Dock.Left}"
+                    x:Name="button" Width="40" Height="40" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="20,20,0,0" Background="{x:Null}" BorderBrush="{x:Null}" Padding="0">
+                        <materialDesign:PackIcon Kind="FormatListBulletedType" Height="40" Width="40" Foreground="#DD000000" />
+                    </Button>
+                </Grid>
+            </materialDesign:DrawerHost>
+            <!--#endregion-->
+
+            <Button HorizontalAlignment="Right" VerticalAlignment="Top" Width="26" Height="26" 
+                    materialDesign:ButtonAssist.CornerRadius="13"
+                    Click="ButtonPowerOff_Click"
+                    Margin="0,7,7,0" Background="Red" BorderBrush="Red" Opacity="0.8" Padding="0" Foreground="#DD000000">
+                <materialDesign:PackIcon Opacity=".8" Kind="Power" Width="20" Height="20" Foreground="#DDFFFFFF" />
+            </Button>
+            <Button HorizontalAlignment="Right" VerticalAlignment="Top" Width="26" Height="26" 
+                    materialDesign:ButtonAssist.CornerRadius="13" Padding="0"
+                    Click="ButtonMinisize_Click"
+                    Margin="0,7,38,0" Background="#FF00FF51" BorderBrush="#FF00FF3A" Opacity="0.8" Foreground="#DDFFFFFF">
+                <materialDesign:PackIcon  Opacity=".8" Kind="WindowMinimize" Width="20" Height="20"/>
+            </Button>
+
+        </Grid>
+
+    </Grid>
+
+</Window>

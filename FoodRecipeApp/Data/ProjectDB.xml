@@ -1,0 +1,499 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <ShowSplashScreen Value="True">
+  </ShowSplashScreen>
+  <Recipe Value="1">
+    <Name>Cá Nục Kho Nước Dừa Sốt Cà Chua</Name>
+    <Descrition>Cá nục khi kho bằng nước dừa giúp cho xương cá mềm rục, thịt cá ngọt và thơm ngon hơn. Sốt cà chua giúp giảm béo dầu mỡ và kích thích vị giác. Đây cũng là món ăn khá phổ biến của người miền Nam Trung bộ và được chế biến với ba nguyên liệu chính là cá nục, cà chua và nước dừa.</Descrition>
+    <Images>
+      <Image>\Recipe_01\MainImage.jpg</Image>
+      <Image>\Recipe_02\MainImage.jpg</Image>
+      <Image>\Recipe_03\MainImage.jpg</Image>
+      <Image>\Recipe_04\MainImage.jpg</Image>
+      <Image>\Recipe_05\MainImage.jpg</Image>
+    </Images>
+    <YoutubeLink>
+    </YoutubeLink>
+    <ShoppingList>
+      <Element Name="Cá nục" Value="700 Gr" />
+      <Element Name="Đường trắng" Value="5 Muỗng cà phê" />
+      <Element Name="Nước dừa" Value="1/2 Lít" />
+      <Element Name="Hành tím" Value="1 Củ" />
+      <Element Name="Tỏi" Value="1 Củ" />
+      <Element Name="Muối" Value="2 Muỗng cà phê" />
+      <Element Name="Nước mắm" Value="2 Muỗng canh" />
+      <Element Name="Cà chua" Value="3 Trái" />
+      <Element Name="Cà chua cô đặc" Value="1 Hũ" />
+    </ShoppingList>
+    <Tutorial>
+      <Step Value="1">
+        <Images>
+          <Image>\Recipe_01\1\cooky-recipe-636326167997446044.jpg</Image>
+        </Images>
+        <Descrition>Làm nóng một ít dầu ăn trên chảo, cho cá nục đã thấm khô nước vào chiên sơ khoảng 10 phút cho thịt cá săn lại là được. Không nên chiên giòn vì mục đích của món này là làm cho thịt cá mềm và rục xương.</Descrition>
+      </Step>
+      <Step Value="2">
+        <Images>
+          <Image>\Recipe_01\2\recipe20032-cook-step1-636326177927643486.jpg</Image>
+          <Image>\Recipe_01\2\recipe20032-cook-step1-636326177928423487.jpg</Image>
+          <Image>\Recipe_01\2\recipe20032-cook-step1-636326177929983490.jpg</Image>
+          <Image>\Recipe_01\2\recipe20032-cook-step1-636326177933103495.jpg</Image>
+        </Images>
+        <Descrition>Chuẩn bị 700gr cá nục làm sạch và cắt khúc vừa ăn. Cà chua rửa sạch, thái hạt lựu. Đầu hành đập dập.</Descrition>
+      </Step>
+      <Step Value="3">
+        <Images>
+          <Image>\Recipe_01\3\cooky-recipe-636326169207852170.jpg</Image>
+          <Image>\Recipe_01\3\cooky-recipe-636326169215340184.jpg</Image>
+          <Image>\Recipe_01\3\cooky-recipe-636326169244356234.jpg</Image>
+          <Image>\Recipe_01\3\cooky-recipe-636326172766218420.jpg</Image>
+        </Images>
+        <Descrition>Sau khi chiên sơ cá thì cho ra một cái nồi lớn vừa đủ để kho. Tiếp tục cho thêm 0.5 lít nước dừa tươi vào, đổ sâm sấp mặt cá và kho cho cá chín mềm trong khoảng 30 phút.</Descrition>
+      </Step>
+      <Step Value="4">
+        <Images>
+          <Image>\Recipe_01\4\cooky-recipe-636326170627922665.jpg</Image>
+          <Image>\Recipe_01\4\cooky-recipe-636326170630262669.jpg</Image>
+          <Image>\Recipe_01\4\cooky-recipe-636326170633382674.jpg</Image>
+        </Images>
+        <Descrition>Chảo dầu ăn đã chiên cá giữ lại để cho cà chua đã thái hạt lựu vào xào khoảng 5 phút (lưu ý nếu dầu hơi nhiều thì nên lược bỏ bớt, chỉ cần vừa đủ để xào cà chua). Sau đó thêm 100ml nước lọc vào và tiếp tục nấu. Khi cà chua đã rục hẳn thì cho thêm 1 hủ cà chua cô đặc vào rồi nấu thêm 10 phút nữa. Nêm vừa ăn các gia vị: 2 muỗng cà phê muối, 5 muỗng canh đường, 2 muỗng canh nước mắm, một ít hành tím băm, ớt.</Descrition>
+      </Step>
+      <Step Value="5">
+        <Images>
+          <Image>\Recipe_01\5\cooky-recipe-636326173010202849.jpg</Image>
+          <Image>\Recipe_01\5\cooky-recipe-636326173012386853.jpg</Image>
+        </Images>
+        <Descrition>Sau khi kho cá nục với nước dừa được hơn 30 phút. Cho phần sốt cà chua đã làm xong vào chung rồi tiếp tục kho thêm 30 - 45 phút, cho nước rút bớt lại còn khoảng 1 nửa lượng nước dừa ban đầu, nước sốt sệt sệt vừa là được.</Descrition>
+      </Step>
+      <Step Value="6">
+        <Images>
+          <Image>\Recipe_01\6\cooky-recipe-636326175075490476.jpg</Image>
+          <Image>\Recipe_01\6\cooky-recipe-636326175086878496.jpg</Image>
+          <Image>\Recipe_01\6\cooky-recipe-636326175094522510.jpg</Image>
+          <Image>\Recipe_01\6\cooky-recipe-636326175106846531.jpg</Image>
+        </Images>
+        <Descrition>Cuối cùng cho thêm ít ớt trái, đầu hành, tiêu vào nồi cá kho cho thêm đẹp mắt và thơm ngon hơn. Cá kho thưởng thức kèm với cơm nóng rất ngon.</Descrition>
+      </Step>
+    </Tutorial>
+    <Rate Value="5" />
+    <IsFavorite Value="false" />
+  </Recipe>
+  <Recipe Value="2">
+    <Name>Gỏi Cuốn Kiểu Nhật</Name>
+    <Descrition>Gỏi cuốn kiểu Nhật thanh mát được chế biến khá khác do với các loại gỏi cuốn của Việt Nam vì đó là sự kết hợp giữa rau củ tươi với thịt bò mềm dai ngon và hấp dẫn. Bạn hãy thử thực hiện món này để thay đổi thực đơn bữa cơm gia đình xem nào.</Descrition>
+    <Images>
+      <Image>\Recipe_02\MainImage.jpg</Image>
+    </Images>
+    <YoutubeLink>
+    </YoutubeLink>
+    <ShoppingList>
+      <Element Name="Thịt bò" Value="340 Gr" />
+      <Element Name="Xà lách" Value="1 Cây" />
+      <Element Name="Cà rốt" Value="2 Củ" />
+      <Element Name="Dưa leo" Value="2 Trái" />
+      <Element Name="Hành lá" Value="2 Cây" />
+    </ShoppingList>
+    <Tutorial>
+      <Step Value="1">
+        <Images>
+          <Image>\Recipe_02\1\recipe32045-cook-step1-636639602248983147.jpg</Image>
+          <Image>\Recipe_02\1\recipe32045-cook-step1-636639602249607148.jpg</Image>
+        </Images>
+        <Descrition>Làm sốt: Cho 3 muỗng canh nước tương, 40g đường, 2 muỗng canh rượu mirin, 2 muỗng canh rượu sake, 1 muỗng cà phê mè rang, 1/2 muỗng cà phê ớt bột, 1/2 muỗng cà phê dầu mè, 1/2 muỗng cà phê tỏi băm, 1/2 muỗng cà phê gừng băm, 1/4 quả táo băm nhuyễn và 1/2 muỗng cà phê tiêu vào tô trộn đều lên cho tan đường. Thịt bò sau khi làm sạch, để ráo nước thì rưới phần nước sốt vừa làm lên thịt, để ướp khoảng 15 phút cho thấm.</Descrition>
+      </Step>
+      <Step Value="2">
+        <Images>
+          <Image>\Recipe_02\2\recipe32045-cook-step2-636639602304675244.jpg</Image>
+          <Image>\Recipe_02\2\recipe32045-cook-step2-636639602305455246.jpg</Image>
+        </Images>
+        <Descrition>Cà rốt, dưa leo gọt vỏ, rửa sạch, thái sợi. Hành lá cắt khú dài khoảng 5cm rồi thái sợi mỏng, ngâm vào tô nước đá cho bớt hăng. Cải xà lách và lá bạc hà rữa sạch để ráo nước. Thịt bò sau khi thấm gia vị, đem nướng chín hoặc cho vào chảo áp chín đều được.</Descrition>
+      </Step>
+      <Step Value="3">
+        <Images>
+          <Image>\Recipe_02\3\recipe32045-cook-step3-636639602336655301.jpg</Image>
+          <Image>\Recipe_02\3\recipe32045-cook-step3-636639602338215303.jpg</Image>
+        </Images>
+        <Descrition>Chuẩn bị một tô nước lạnh, nhúng bánh tráng vào nước cho mềm sau đó trải ra mặt phẳng, cho một miếng cải xà lách lên, tiếp đó là thịt bò, cà rốt, lá bạc hà, ngò, dưa leo lên cải. Cuộn thật chặt lại để các nguyên liệu bên trong không bị rớt ra ngoài và cẩn thận tránh làm rách bánh tráng. Làm tiếp tục như vậy cho đến hết là bạn đã xong món gỏi cuốn kiểu nhật vừa nhanh vừa dễ rồi nè.</Descrition>
+      </Step>
+      <Step Value="4">
+        <Images>
+          <Image>\Recipe_02\4\recipe32045-cook-step4-636639602364111349.jpg</Image>
+          <Image>\Recipe_02\4\recipe32045-cook-step4-636639603696197688.jpg</Image>
+        </Images>
+        <Descrition>Gỏi cuốn kiểu Nhật thanh mát được chế biến khá khác do với các loại gỏi cuốn của Việt Nam vì đó là sự kết hợp giữa rau củ tươi với thịt bò mềm dai ngon và hấp dẫn. Bạn hãy thử thực hiện món này để thay đổi thực đơn bữa cơm gia đình xem nào.</Descrition>
+      </Step>
+    </Tutorial>
+    <Rate Value="4" />
+    <IsFavorite Value="False" />
+  </Recipe>
+  <Recipe Value="3">
+    <Name>Canh Chua Bông So Đũa</Name>
+    <Descrition>Nhắc đến bông so đũa hay còn gọi là sua đủa, chắc không còn xa lạ gì với các bạn ở khu vực miền Nam nhưng chắc hẵn cũng khá xa lạ với nhiều bạn ở khu vực miền Bắc. Tuy nhiên nếu ai có một lần được thưởng thức các món ăn được chế biến bởi bông so đủa chắc chắn sẽ bị cuốn hút. Mấy nay Sài Gòn mưa nhiều, cũng dịp này bông trổ nhiều hơn nên lại có cơ hội được ăn món canh chua bông so đủa quen thuộc của má rồi ăn kèm với tép ram mặn trong mấy chiều mưa Sài Gòn... là cực kỳ hao cơm luôn.</Descrition>
+    <Images>
+      <Image>\Recipe_03\MainImage.jpg</Image>
+    </Images>
+    <YoutubeLink>https://youtu.be/9nfTAx55WxM</YoutubeLink>
+    <ShoppingList>
+      <Element Name="Bông so đũa" Value="200gr" />
+      <Element Name="Cá lóc" Value="700gr" />
+      <Element Name="Cà chua" Value="5 trái" />
+      <Element Name="Đậu bắp" Value="10 trái" />
+      <Element Name="Me vắt" Value="200gr" />
+    </ShoppingList>
+    <Tutorial>
+      <Step Value="1">
+        <Images>
+          <Image>\Recipe_03\1\347346f6-3bf8-442c-b1ed-cb795814deb0.jpeg</Image>
+          <Image>\Recipe_03\1\ffea5b1b-8a61-4f71-8e7e-4c0ac3e7e122.jpeg</Image>
+        </Images>
+        <Descrition>Trước khi thực hiện câc bước bên dưới vui lòng rửa sạch và sơ chế các nguyên liệu như cá.</Descrition>
+      </Step>
+      <Step Value="2">
+        <Images>
+          <Image>\Recipe_03\2\4a172bbd-dbca-4971-9619-0aab7653adc0.jpeg</Image>
+          <Image>\Recipe_03\2\204e138d-95d3-4a06-bb84-ed0c111765f2.jpeg</Image>
+        </Images>
+        <Descrition>Bông so đủa sau khi hái, các bạn nhặt bỏ phần cuống cũng như nhuỵ hoa để ăn không bị đắng. Nhặt hoa nhớ kỹ phần bên trong để tránh có sâu nha.</Descrition>
+      </Step>
+      <Step Value="3">
+        <Images>
+          <Image>\Recipe_03\3\06e052ab-039c-4dc6-9abf-f6402623e7f6.jpeg</Image>
+          <Image>\Recipe_03\3\c37bf884-8e97-46f1-9294-f8ed563f7a2e.jpeg</Image>
+          <Image>\Recipe_03\3\dc9f5b95-7c3a-4308-835c-939e4ee72353.jpeg</Image>
+        </Images>
+        <Descrition>Chuẩn bị khoảng 2.5-3 lít nước lọc đun sôi. Khi nước vừa sôi cho vào 1-1.5 muỗng cafe muối và ít nước mắm để luộc cá lóc. Luộc khoảng 7-10 phút, rớt cá ra và tiếp tục thực hiện các bước kế tiếp.</Descrition>
+      </Step>
+      <Step Value="4">
+        <Images>
+          <Image>\Recipe_03\4\66b00931-6987-44ef-ac5f-803ec0086735.jpeg</Image>
+          <Image>\Recipe_03\4\202d7a12-26e1-499c-961b-77fd522fb70e.jpeg</Image>
+          <Image>\Recipe_03\4\a1256d18-aa74-4f63-a56f-69d6d6eb2dc0.jpeg</Image>
+        </Images>
+        <Descrition>Cho khoảng 100-150gr me vắt vào chén và dùng nước sôi để tán nhuyễn để lấy nước cốt và cho lại vào nồi nước dùng</Descrition>
+      </Step>
+      <Step Value="5">
+        <Images>
+          <Image>\Recipe_03\5\76c6c723-33de-4b19-945c-e865bd595d66.jpeg</Image>
+          <Image>\Recipe_03\5\ee7f4ac0-bd65-4806-ba5f-00c48a61633b.jpeg</Image>
+        </Images>
+        <Descrition>Bắt đầu nêm nước dùng trước khi cho tiếp các phần rau còn lại vào: 4 muỗng cafe đường, 1 muỗng muối, 1 muỗng bột ngọt và 1 muỗng nước mắm. Sau đó nếm lại nước dùng sau cho vị vừa chua chua, vừa ngọt ngọt.</Descrition>
+      </Step>
+      <Step Value="6">
+        <Images>
+          <Image>\Recipe_03\6\85ad6d23-84f7-4b09-ab1d-f11874451245.jpeg</Image>
+          <Image>\Recipe_03\6\4000e5bc-03ac-4fd0-9548-0fa7220ff258.jpeg</Image>
+          <Image>\Recipe_03\6\c22d1a3d-c9eb-4875-82ee-5d9868bf0fa3.jpeg</Image>
+        </Images>
+        <Descrition>Cho đậu bắp vào trước sau đó là cà chua rồi cho bông so đủa vào là tắt luôn bếp. Lúc này là nếm lại lần nước và điều chỉnh lại gia vị cho phù hợp với gia đình nhen</Descrition>
+      </Step>
+      <Step Value="7">
+        <Images>
+          <Image>\Recipe_03\7\19c3f3c9-6c8c-4b33-9580-ea8686dd2c26.jpeg</Image>
+          <Image>\Recipe_03\7\76118f12-ffa4-4c39-9bba-8eff75325381.jpeg</Image>
+        </Images>
+        <Descrition>Rau thơm cắt khúc và thêm tí ớt nữa là thơm bát ngát luôn. Bí quyết của má mình để canh chua ngon nên thêm vài lá tần ô khi nêm canh vị canh sẽ ngon hơn. Chúc cả nhà có một món ngon nhé</Descrition>
+      </Step>
+    </Tutorial>
+    <Rate Value="5" />
+    <IsFavorite Value="False" />
+  </Recipe>
+  <Recipe Value="4">
+    <Name>Phở Tôm Nấm</Name>
+    <Descrition>Lâu ngày đổi gió với món phở tôm nấm lạ miệng nha các bạn ơi!</Descrition>
+    <Images>
+      <Image>\Recipe_04\MainImage.jpg</Image>
+    </Images>
+    <YoutubeLink>https://youtu.be/oLrz8at-rCU</YoutubeLink>
+    <ShoppingList>
+      <Element Name="Phở" Value="500gr" />
+      <Element Name="Tôm to" Value="10 con" />
+      <Element Name="Hành ngò" Value="1 ít" />
+      <Element Name="Nấm" Value="300gr" />
+      <Element Name="Thịt xay" Value="300gr" />
+    </ShoppingList>
+    <Tutorial>
+      <Step Value="1">
+        <Images>
+          <Image>\Recipe_04\1\ba247bfc-6ed6-41c7-907c-d4ee4a241742.jpeg</Image>
+        </Images>
+        <Descrition>Phở tươi thì các bạn dùng luôn, còn phở khô thì phải trụng qua nước sôi cho mềm (có thể dùng bún, mì, hủ tiếu thay cho phở)</Descrition>
+      </Step>
+      <Step Value="2">
+        <Images>
+          <Image>\Recipe_04\2\f5226892-ce1c-418d-a6b1-80e279918d24.jpeg</Image>
+        </Images>
+        <Descrition>Tôm cho nước sôi vào luộc chín, bóc vỏ</Descrition>
+      </Step>
+      <Step Value="3">
+        <Images>
+          <Image>\Recipe_04\3\6b7d36d0-d21a-49c5-a2df-9fa12e94322b.jpeg</Image>
+          <Image>\Recipe_04\3\b099ea43-f7fe-4a3e-906a-2a6d7d08216b.jpeg</Image>
+        </Images>
+        <Descrition>Nấm rửa qua nước muối, cắt miếng nhỏ (để lại 1 ít nấm nguyên cắt chéo chữ X để trang trí)</Descrition>
+      </Step>
+      <Step Value="4">
+        <Images>
+          <Image>\Recipe_04\4\0c54df33-fa19-4dc5-a93c-1917fa6f0399.jpeg</Image>
+        </Images>
+        <Descrition>Phi thơm hành tím, cho nấm đã cắt cùng với thịt xay vào xào chung với 1 nhúm muối (ai ăn cay thì cho 1/4 muỗng canh ớt bột vào xào chung cho có màu đẹp). Xào khoảng 5 phút, rồi cho nước vào (canh chừng nước khoảng đến mắt nồi). Sau đó cho tiếp nấm cắt chéo vào cuối cùng, nêm nếm gia vị cho vừa ăn, nước dùng sôi thì hạ lửa nhỏ, nấu khoảng 10 phút nữa lấy ra dùng.</Descrition>
+      </Step>
+    </Tutorial>
+    <Rate Value="4" />
+    <IsFavorite Value="False" />
+  </Recipe>
+  <Recipe Value="5">
+    <Name>Lẩu Kim Chi Cay Kiểu Hàn</Name>
+    <Descrition>Lẩu kim chi cay kiểu Hàn là sự góp mặt của nhiều nguyên liệu thực phẩm Hàn Quốc quen thuộc như bánh gạo, tương ớt Gochujang, kim chi cải thảo, ... Thích hợp dùng cho bữa ăn gia đình trong những ngày trời lạnh.</Descrition>
+    <Images>
+      <Image>\Recipe_05\MainImage.jpg</Image>
+    </Images>
+    <YoutubeLink>https://youtu.be/12-n7KaMLjE</YoutubeLink>
+    <ShoppingList>
+      <Element Name="Kim chi cải thảo" Value="300 Gr" />
+      <Element Name="Phô mai lá" Value="1 Miếng" />
+      <Element Name="Xúc xích bò" Value="4 Cây" />
+      <Element Name="Thịt bò" Value="100 Gr" />
+      <Element Name="Đậu hũ trắng" Value="1/2 Miếng" />
+      <Element Name="Bánh gạo" Value="50 Gr" />
+    </ShoppingList>
+    <Tutorial>
+      <Step Value="1">
+        <Images>
+          <Image>\Recipe_05\1\recipe33748-cook-step1-636663103224306718.png</Image>
+          <Image>\Recipe_05\1\recipe33748-cook-step1-636663103244777889.png</Image>
+        </Images>
+        <Descrition>Đậu hũ trắng cắt miếng vừa ăn. Xúc xích bò cắt lát mỏng xéo. Thịt nguội thái lát. (Có thể thêm thịt ba chỉ thái lát mỏng nếu thích). Hành boa rô cắt lát xéo. Thịt bò bằm nhỏ.</Descrition>
+      </Step>
+      <Step Value="2">
+        <Images>
+          <Image>\Recipe_05\2\recipe33748-cook-step2-636663105835786086.png</Image>
+          <Image>\Recipe_05\2\recipe33748-cook-step2-636663106004875757.png</Image>
+        </Images>
+        <Descrition>Xếp xúc xích, thịt nguội, hành tây, kim chi, đậu hũ, thịt bò bằm vào nồi. Thêm hỗn hợp gia vị lên trên. Thêm nước dùng hầm xương vào, đun sôi khoảng 5 phút. Nêm muối và tiêu cho vừa ăn. Thêm một miếng phô mai lên trên. Thêm hành boa rô lên. Khi ăn múc ra chén, dùng nóng.</Descrition>
+      </Step>
+      <Step Value="3">
+        <Images>
+          <Image>\Recipe_05\3\recipe33748-cook-step3-636663106869315200.png</Image>
+          <Image>\Recipe_05\3\recipe33748-cook-step3-636663106883866033.png</Image>
+        </Images>
+        <Descrition>Món lẩu có thể ăn cùng mì tôm hoặc cơm đều ngon. Vị cay thơm đặc trưng của lẩu thích hợp dùng trong những ngày trời trở lạnh nhé!</Descrition>
+      </Step>
+    </Tutorial>
+    <Rate Value="5" />
+    <IsFavorite Value="False" />
+  </Recipe>
+  <Recipe Value="6">
+    <Name>Cua Sốt Trứng Muối</Name>
+    <Descrition>Nếu ai đã thích trứng muối thì sẽ không thể bỏ qua món cua trứng muối mà mình sắp giới thiệu dưới dây. Vị béo ngậy của trứng muối cùng với vị ngọt ngon của cua sẽ khiến bạn muốn ăn mãi không thôi.</Descrition>
+    <Images>
+      <Image>\Recipe_06\MainImage.jpg</Image>
+    </Images>
+    <YoutubeLink>https://youtu.be/AGAlVC_AcaA</YoutubeLink>
+    <ShoppingList>
+      <Element Name="Cua biển" Value="2 Con" />
+      <Element Name="Trứng muối" Value="6 Múi" />
+      <Element Name="Đường" Value="2 Muỗng canh" />
+      <Element Name="Nước mắm" Value="1 Muỗng canh" />
+      <Element Name="Bột bắp" Value="100 Gr" />
+      <Element Name="Dầu ăn" Value="120 ml" />
+      <Element Name="Tỏi băm" Value="10 Gr" />
+    </ShoppingList>
+    <Tutorial>
+      <Step Value="1">
+        <Images>
+          <Image>\Recipe_06\1\cooky-recipe-637028839609443427.jpg</Image>
+          <Image>\Recipe_06\1\cooky-recipe-637028839611162181.jpg</Image>
+          <Image>\Recipe_06\1\cooky-recipe-637028845752769801.jpg</Image>
+          <Image>\Recipe_06\1\cooky-recipe-637028845820676620.jpg</Image>
+        </Images>
+        <Descrition>Lấy trứng lòng đỏ trứng muối và rửa sạch, dùng một nồi lớn hấp cách thuỷ khoảng 15 phút cho trứng vừa chín thì nhắc xuống để nguội. Tiếp tục nghiền nhuyễn các lòng đỏ trứng muối đã hấp để chuẩn bị làm sốt. Cho 20ml dầu ăn và 1 muỗng cà phê tỏi băm vào, đến khi tỏi dậy mùi thơm thì cho trứng muối vào, cho thêm 2 muỗng canh đường, 1 muỗng canh nước mắm cho hương vị đậm đà. Đảo đều đến khi hỗn hợp sền sệt lại thì tắt bếp.</Descrition>
+      </Step>
+      <Step Value="2">
+        <Images>
+          <Image>\Recipe_06\2\cooky-recipe-637028848277404416.jpg</Image>
+          <Image>\Recipe_06\2\cooky-recipe-637028848297404455.jpg</Image>
+          <Image>\Recipe_06\2\cooky-recipe-637028848298498281.jpg</Image>
+          <Image>\Recipe_06\2\cooky-recipe-637028848298966985.jpg</Image>
+        </Images>
+        <Descrition>Cua sau khi mua về rửa sạch, tách mai và bỏ phần mang cua đi. Áo một lớp bột bắp lên cua. Cho chảo lên bếp và cho 100ml dầu ăn vào rồi đem cua chiên đến vừa chín thì gấp ra để ráo dầu.</Descrition>
+      </Step>
+      <Step Value="3">
+        <Images>
+          <Image>\Recipe_06\3\cooky-recipe-637028866125344334.jpg</Image>
+          <Image>\Recipe_06\3\cooky-recipe-637028866128626032.jpg</Image>
+          <Image>\Recipe_06\3\cooky-recipe-637028866128782368.jpg</Image>
+          <Image>\Recipe_06\3\cooky-recipe-637028866398097220.jpg</Image>
+        </Images>
+        <Descrition>Bắt chảo lên bếp, cho cua đã chiên vào, tiếp đến ta rưới phần sốt trứng muối đã làm lên trên, đão đều cho thịt cua thấm sốt. Dọn ra dĩa và thưởng thức thôi.</Descrition>
+      </Step>
+    </Tutorial>
+    <Rate Value="5" />
+    <IsFavorite Value="False" />
+  </Recipe>
+  <Recipe Value="7">
+    <Name>Hủ Tiếu Bò Kho</Name>
+    <Descrition>Bò kho từ lâu đã là món ăn truyền thống của Việt Nam được nhà nhà, người người ưa thích! Chuẩn bị một nồi bò kho ngon đúng điệu cho cả nhà cùng thưởng thức vào bữa sáng hẳn là điều mà bà nội trợ nào cũng muốn làm. Với công thức này, bạn sẽ có được một tô hủ tiếu bò kho chuẩn ngon, hấp dẫn hệt như ngoài hàng, còn chờ gì mà không xắn tay vào bếp làm ngay món ăn hấp dẫn này?</Descrition>
+    <Images>
+      <Image>\Recipe_07\MainImage.jpg</Image>
+    </Images>
+    <YoutubeLink>https://youtu.be/F_lhnci3cZY</YoutubeLink>
+    <ShoppingList>
+      <Element Name="Thịt bò" Value="1 Kg" />
+      <Element Name="Tỏi" Value="1 Củ" />
+      <Element Name="Gừng băm" Value="3 Muỗng canh" />
+      <Element Name="Nước mắm" Value="5 Muỗng canh" />
+      <Element Name="Gia vị bò kho" Value="2 Muỗng canh" />
+      <Element Name="Đường nâu" Value="1.50 Muỗng canh" />
+    </ShoppingList>
+    <Tutorial>
+      <Step Value="1">
+        <Images>
+          <Image>\Recipe_07\1\recipe25119-prepare-step1-636483261586278677.jpg</Image>
+        </Images>
+        <Descrition>Thịt bò mua về rửa sạch, để ráo sau đó cắt miếng vừa ăn. Tiếp đến cho tất cả các nguyên liệu phần ướp thịt gồm 2 củ tỏi, 3 muỗng canh gừng băm, 5 muỗng canh nước mắm, 2 muỗng canh bột gia vị bò kho, 1,5 muỗng cà phê đường nâu vào ướp cùng trong vòng 30 phút.</Descrition>
+      </Step>
+      <Step Value="2">
+        <Images>
+          <Image>\Recipe_07\2\recipe25119-prepare-step2-636483261667242819.jpg</Image>
+          <Image>\Recipe_07\2\recipe25119-prepare-step2-636483261667398819.jpg</Image>
+        </Images>
+        <Descrition>Bắc chảo lên bếp cùng 3 muỗng canh dầu ăn, khi dầu nóng đều thì cho sả, tỏi băm nhuyễn vào phi thơm. Sau đó bạn cho hành tây thái lát mỏng vào đảo đều cho đến khi hơi mềm.</Descrition>
+      </Step>
+      <Step Value="3">
+        <Images>
+          <Image>\Recipe_07\3\recipe25119-prepare-step3-636483261744462955.jpg</Image>
+        </Images>
+        <Descrition>Lúc này, cho bò vào nấu cùng và thêm sốt cà chua, nấu trong vòng 5 phút thì thêm nước, nước dừa, hoa hồi, tiêu, ớt bột vào đun cho đến khi sôi thì hạ lửa hỏ đun trong vòng 1 giờ đồng hồ.</Descrition>
+      </Step>
+      <Step Value="4">
+        <Images>
+          <Image>\Recipe_07\4\recipe25119-prepare-step4-636483261911071247.jpg</Image>
+          <Image>\Recipe_07\4\recipe25119-prepare-step4-636483262022923444.jpg</Image>
+        </Images>
+        <Descrition>Thêm cà rốt cắt miếng, muối, nước tương và sa tế, nấu thêm 40 phút nữa là được. Khi ăn, trụng sợi hủ tiếu qua nước sôi để giữ nóng sau đó cho ra tô cùng với hỗn hợp bò kho, dùng kèm rau thơm và chanh tươi. Bò kho từ lâu đã là món ăn truyền thống của Việt Nam được nhà nhà, người người ưa thích! Chuẩn bị một nồi bò kho ngon đúng điệu cho cả nhà cùng thưởng thức vào bữa sáng hẳn là điều mà bà nội trợ nào cũng muốn làm. Với công thức này, bạn sẽ có được một tô hủ tiếu bò kho chuẩn ngon, hấp dẫn hệt như ngoài hàng, còn chờ gì mà không xắn tay vào bếp làm ngay món ăn hấp dẫn này?</Descrition>
+      </Step>
+    </Tutorial>
+    <Rate Value="5" />
+    <IsFavorite Value="False" />
+  </Recipe>
+  <Recipe Value="8">
+    <Name>Đậu Hũ Sốt Nấm Hương</Name>
+    <Descrition>Đậu phụ sốt cùng với thịt bò hoặc thịt lợn băm là món ăn quen thuộc của mỗi gia đình. Tuy nhiên, chỉ với một thay đổi nhỏ là nấm hương, bạn đã chế biến ra được một món ăn chay thanh đạm nhưng không kém phần hấp dẫn.</Descrition>
+    <Images>
+      <Image>\Recipe_08\MainImage.jpg</Image>
+    </Images>
+    <YoutubeLink>https://youtu.be/ZMcVtg503Vs</YoutubeLink>
+    <ShoppingList>
+      <Element Name="Đậu hũ non" Value="2 Miếng" />
+      <Element Name="Nấm hương" Value="10 Cái" />
+      <Element Name="Gừng" Value="5 Lát" />
+      <Element Name="Tỏi" Value="2 Tép" />
+      <Element Name="Hành tím" Value="3 Củ" />
+      <Element Name="Hành lá" Value="1 Cây" />
+    </ShoppingList>
+    <Tutorial>
+      <Step Value="1">
+        <Images>
+          <Image>\Recipe_08\1\recipe4134-prepare-step1-636118001761768805.jpg</Image>
+        </Images>
+        <Descrition>Cắt đậu hũ non thành từng khúc nhỏ khoảng 3cm, ngâm trong nước muối khoảng 10 phút. Nấm hương rửa sạch cắt khúc. Gừng, hành tím và tỏi cắt nhỏ. Cho nước vào bột bắp, quấy đều.</Descrition>
+      </Step>
+      <Step Value="2">
+        <Images>
+          <Image>\Recipe_08\2\recipe4134-prepare-step2-636118001912621070.jpg</Image>
+          <Image>\Recipe_08\2\recipe4134-prepare-step2-636118001912777071.jpg</Image>
+        </Images>
+        <Descrition>Đổ dầu ăn vào chảo và đun nóng, phi thơm hành, gừng và tỏi. Thêm nấm đã cắt nhỏ vào xào cho đến mềm.</Descrition>
+      </Step>
+      <Step Value="3">
+        <Images>
+          <Image>\Recipe_08\3\recipe4134-prepare-step3-636118002384989900.jpg</Image>
+          <Image>\Recipe_08\3\recipe4134-prepare-step3-636118002398873924.jpg</Image>
+        </Images>
+        <Descrition>Sau đó cho đậu hũ cùng hỗn hợp các loại gia vị gồm sa tế, hạt nêm, tiêu, ớt, bột bắp và đổ vào chảo. Đảo đều các nguyên liệu, nhớ nhẹ tay để tránh làm vỡ các miếng đậu hũ.</Descrition>
+      </Step>
+      <Step Value="4">
+        <Images>
+          <Image>\Recipe_08\4\recipe4134-prepare-step4-636118002541614175.jpg</Image>
+          <Image>\Recipe_08\4\recipe4134-prepare-step4-636118002542082176.jpg</Image>
+        </Images>
+        <Descrition>Sau khoảng 3 phút là đậu hũ và nấm đã ngấm gia vị. Bạn hãy trình bày ra đĩa và cho thêm một chút hành lá cắt nhỏ để trông đẹp mắt hơn là đã hoàn thành.</Descrition>
+      </Step>
+    </Tutorial>
+    <Rate Value="5" />
+    <IsFavorite Value="False" />
+  </Recipe>
+  <Recipe Value="9">
+    <Name>Gà Chiên Hàn Quốc</Name>
+    <Descrition>Một món cánh gà chiên với vị chua, cay, mặn, ngọt đặc trưng của sứ xở Kim Chi. Bạn hãy chọn món này cho bữa cơm gia đình hôm nay nhé! Đảm bảo cả nhà sẽ chén hết cơm cho mà xem.</Descrition>
+    <Images>
+      <Image>\Recipe_09\MainImage.jpg</Image>
+    </Images>
+    <YoutubeLink>https://youtu.be/z9TTO43qG6M</YoutubeLink>
+    <ShoppingList>
+      <Element Name="Cánh gà" Value="500 Gr" />
+      <Element Name="Sữa đậu nành" Value="100 ml" />
+      <Element Name="Muối" Value="1 Muỗng cà phê" />
+      <Element Name="Tiêu" Value="1/2 Muỗng cà phê" />
+      <Element Name="Đường trắng" Value="1 Muỗng canh" />
+      <Element Name="Gừng băm" Value="1/2 Muỗng canh" />
+      <Element Name="Tỏi băm" Value="1 Muỗng cà phê" />
+    </ShoppingList>
+    <Tutorial>
+      <Step Value="1">
+        <Images>
+          <Image>\Recipe_09\1\recipe1765-prepare-step1-635887932890896822.jpg</Image>
+          <Image>\Recipe_09\1\recipe1765-prepare-step1-635887933149077275.jpg</Image>
+        </Images>
+        <Descrition>Cánh gà rửa sạch, chặt làm đôi, có thể bỏ da nếu thích. Dùng dao khứa 3-4 đường lên phần thịt cánh gà.</Descrition>
+      </Step>
+      <Step Value="2">
+        <Images>
+          <Image>\Recipe_09\2\recipe1765-prepare-step2-635887935866290048.jpg</Image>
+        </Images>
+        <Descrition>Cho 100ml sữa đậu nành, 1 muỗng cà phê muối, 1/2 muỗng cà phê tiêu, 1 muỗng canh đường trắng, 1/2 muỗng canh gừng băm, 1 muỗng cà phê tỏi băm, 1/2 củ hành tây bào nhỏ, 1 muỗng cà phê hành tím băm vào tô, trộn đều.</Descrition>
+      </Step>
+      <Step Value="3">
+        <Images>
+          <Image>\Recipe_09\3\recipe1765-prepare-step3-635887936099822458.jpg</Image>
+        </Images>
+        <Descrition>Cho cánh gà vào hỗn hợp đã trộn ở bước 2, trộn đều cho thấm.</Descrition>
+      </Step>
+      <Step Value="4">
+        <Images>
+          <Image>\Recipe_09\4\recipe1765-prepare-step5-635887937835013506.jpg</Image>
+        </Images>
+        <Descrition>Trộn đều bột mì, bột cà ri, bột khoai tây, Cho hỗn hợp bột vào túi nylon, thêm cánh gà vào, xóc đều. Thả cánh gà vào chảo dầu ăn đang sôi, chiên vàng giòn.</Descrition>
+      </Step>
+      <Step Value="5">
+        <Images>
+          <Image>\Recipe_09\5\recipe1765-prepare-step5-635887937835013506 (1).jpg</Image>
+          <Image>\Recipe_09\5\recipe1765-prepare-step5-635887938273218275.jpg</Image>
+        </Images>
+        <Descrition>Gắp cánh gà ra, để ráo dầu. Để cánh gà có màu đẹp, vỏ giòn bên trong chín mềm, bạn bật bếp lửa thật to, chiên nhanh cánh gà lần thứ 2 khoảng 5 phút, cho ra rổ, để ráo dầu ăn.</Descrition>
+      </Step>
+      <Step Value="6">
+        <Images>
+          <Image>\Recipe_09\6\recipe1765-prepare-step6-635887938896907371.jpg</Image>
+        </Images>
+        <Descrition>1/2 củ hành tây còn lại, cắt nhỏ, cho vào chảo dầu ăn, đảo đều.</Descrition>
+      </Step>
+      <Step Value="7">
+        <Images>
+          <Image>\Recipe_09\7\recipe1765-prepare-step7-635887939895309125.jpg</Image>
+          <Image>\Recipe_09\7\recipe1765-prepare-step7-635887939914341158.jpg</Image>
+        </Images>
+        <Descrition>Cho tương ớt, giấm, ớt bột, cánh gà đã chiên vào, đảo đều đến khi phần sốt ngấm vào cánh gà.</Descrition>
+      </Step>
+      <Step Value="8">
+        <Images>
+          <Image>\Recipe_09\8\recipe1765-prepare-step8-635887940436786076.jpg</Image>
+          <Image>\Recipe_09\8\recipe1765-prepare-step8-635887940451138101.jpg</Image>
+        </Images>
+        <Descrition>Bày món ăn ra đĩa, rắc thêm mè trắng rang tùy thích. Món này mà ăn cùng với cơm ngon hết ý.</Descrition>
+      </Step>
+    </Tutorial>
+    <Rate Value="5" />
+    <IsFavorite Value="False" />
+  </Recipe>
+</root>
